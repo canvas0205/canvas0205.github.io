@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const Sidebar: React.FC = () => {
+const Sidebar = () => {
   const router = useRouter();
   const handleReload = () => {
     router.push("/").then(() => {
