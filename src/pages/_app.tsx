@@ -1,11 +1,13 @@
-import { AppProps } from 'next/app'; // Next.jsの型
-import '../styles/globals.css'; // Tailwind CSSやその他のグローバルCSSファイルをインポート
+import { AppProps } from 'next/app';
+import '../styles/globals.css';
+import { GoogleTagManager } from '@next/third-parties/google';
 
-// カスタムAppコンポーネント
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    // コンポーネントとページごとのプロパティを渡す
-    <Component {...pageProps} />
+    <>
+      <Component {...pageProps} />
+      <GoogleTagManager gtmId="G-YXNQP4ZP1V" />
+    </>
   );
 }
 
