@@ -7,7 +7,7 @@ interface WorkItemProps {
   images: string[];
 }
 
-export default function WorkItem({ title, logo, description, images }: WorkItemProps) {
+const WorkItem = ({ title, logo, description, images }: WorkItemProps) => {
   return (
     <div className="mb-16">
       <h2 className="text-2xl font-bold mb-4">{title}</h2>
@@ -27,3 +27,5 @@ export default function WorkItem({ title, logo, description, images }: WorkItemP
     </div>
   );
 }
+
+export default WorkItem;

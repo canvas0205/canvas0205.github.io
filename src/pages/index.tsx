@@ -1,5 +1,5 @@
-import Sidebar from "@/components/Sidebar";
 import { useEffect } from "react";
+import Sidebar from "@/components/Sidebar";
 import About from "@/components/SectionAbout";
 import Career from "@/components/SectionCareer";
 import Skills from "@/components/SectionSkills";

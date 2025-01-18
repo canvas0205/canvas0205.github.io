@@ -1,6 +1,6 @@
 import WorkItem from "./SectionWorksItem";
 
-export default function Works() {
+const Works = () => {
   return (
     <div id="works">
       <h1 className="text-3xl font-bold mb-4">Works</h1>
@@ -36,3 +36,5 @@ export default function Works() {
     </div>
   );
 }
+
+export default Works;
